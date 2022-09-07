@@ -1,10 +1,15 @@
-let body=document.body;
-let btn=document.querySelector("button");
-let colors=["red","green","blue","gray"];
+let icon=document.querySelector("i");
+let paragraph=document.querySelector("#content");
 
-function changeBgcolor(){
-  let randomIndex=Math.floor(Math.random()*colors.length);
-  body.style.backgroundColor=colors[randomIndex];
-}
-setInterval(changeBgcolor,3000);
-btn.addEventListener("click",changeBgcolor);
+icon.addEventListener("click",function(){
+    paragraph.classList.toggle("hide");
+    if (paragraph.classList.contains("hide")) {
+        icon.classList.replace("fa-minus", "fa-plus");
+      } else {
+        icon.classList.replace("fa-plus", "fa-minus");
+      }
+})
+
+
+
+
