@@ -1,10 +1,7 @@
-let body=document.body;
-let btn=document.querySelector("button");
-let colors=["red","green","blue","gray"];
+let input = document.querySelector("#input");
+let body = document.querySelector("body");
 
-function changeBgcolor(){
-  let randomIndex=Math.floor(Math.random()*colors.length);
-  body.style.backgroundColor=colors[randomIndex];
+function changeColor(event){
+body.style.backgroundColor = event.target.value;
 }
-setInterval(changeBgcolor,3000);
-btn.addEventListener("click",changeBgcolor);
+input.addEventListener("input", changeColor);
