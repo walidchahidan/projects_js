@@ -15,7 +15,7 @@ h1{
 }
 
 button{
-    
+    margin-right: 30px;
     padding: 20px;
     background-color: rgb(7, 255, 7);
     color: #66214C;
@@ -23,8 +23,11 @@ button{
     border-radius: 10px;
     
 }
-#low{
-    margin-right: 50px;
+#div2{
+    
+    
+    
+    margin-right: 20px;
     
 }
 p{
