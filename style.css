@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}
+div{
+    height: 60%;
+    width: 50%;
+    background-color: #66214C;
+}
+h1{
+    color: gray;
+}
+
+button{
+    
+    padding: 20px;
+    background-color: rgb(7, 255, 7);
+    color: #66214C;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+#low{
+    margin-right: 50px;
+    
+}
+p{
+    font-size: 3em;
+    color: white;
+}

@@ -1,7 +1,12 @@
-let input = document.querySelector("#input");
-let body = document.querySelector("body");
-
-function changeColor(event){
-body.style.backgroundColor = event.target.value;
+// let low=document.getElementById("low");
+// let add=document.getElementById("add");
+var count=0;
+function add(){
+   
+    document.getElementById("cnt").innerHTML=count++;
+    
 }
-input.addEventListener("input", changeColor);
+function low(){
+    
+    document.getElementById("cnt").innerHTML=count--;
+}
