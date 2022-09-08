@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+}
+div{
+    display: block;
+    margin: auto;
+    width: 50vw;
+    background: linear-gradient(#e71313, #040405);
+    justify-content: center;
+}
