@@ -1,10 +1,31 @@
+p{
+    padding: 20px;
+    margin: 0;
+    transition: all ease 2s;
+}
 .hide{
-    display: none;
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px !important;
 }
 div {
+    width: 70%;
     
-    overflow: hidden;
+    margin: auto;
+    border: 1px solid black;
+    
   }
+h3{
+   border-bottom: 1px solid black;
+   margin: 0;
+   padding: 0;
+}
 i{
     float: right;
+    /* transition: 1s; */
+}
+i:active{
+    transform: rotate(180deg);
 }
