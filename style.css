@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background-color: #e4d33b;
+    background-image: url("./bg.jpg");
 }
 div{
     display: block;
@@ -8,7 +8,7 @@ div{
     border-radius: 20px;
     width: 50vw;
     height: 300px;
-    background: linear-gradient(#e71313, #e6870a);
+    background: linear-gradient(#297cac, #a80c9b);
     justify-content: center;
     
 }
