@@ -6,6 +6,6 @@ ul li{
     padding: 10px;
     /* background-color: aliceblue; */
 }
-ul li::after{
-    background-color: red;
+ul li:nth-child(odd){
+    background-color: aliceblue;
 }
