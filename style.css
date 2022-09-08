@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+}
+ul li{
+    list-style: none;
+    padding: 10px;
+    /* background-color: aliceblue; */
+}
+ul li::after{
+    background-color: red;
+}
