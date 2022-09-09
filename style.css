@@ -11,7 +11,8 @@ div{
     background-color: rgba(240, 248, 255, 0.247);
     width: 40%;
     margin: auto;
-    
+    padding: 10px 0;
+    box-shadow: 10px 10px 50px grey;
 }
 input{
     padding: 20px;

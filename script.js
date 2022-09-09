@@ -28,6 +28,7 @@ btn.addEventListener("click", function () {
   } else if (nbr == gess) {
     // alert("bravooo!!!");
     res.textContent = `BRAVOOOOOOOOOOOOO!!!!`;
+    res.style.color="green";
     chance = 0;
     ch.textContent=`Vous avez ${chance} chances`;
     input.disabled=true;
@@ -47,3 +48,19 @@ btn.addEventListener("click", function () {
 function randomBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+//     let btn2=document.createElement("button");
+//     let content=document.createTextNode("Play Again"); 
+//     let div=document.getElementsByTagName("div")[0];
+// function showbtn(){
+//   btn2.appendChild(content);
+//   div.appendChild(btn2);
+// }
+
+// // showbtn() ;
+//   input.disabled=true;
+//   btn.disabled=true;
+// function playagain() {
+//   input.disabled=false;
+//   btn.disabled=false;
+// }
+// playagain();
