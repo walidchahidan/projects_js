@@ -1,3 +1,26 @@
 body{
     text-align: center;
+    background: linear-gradient(to left,#D4AC0D ,#15e40e );
+}
+@font-face {
+    font-family: vampire;
+    src: url("./vampire/Vampire\ Wars\ Italic.ttf");
+}
+div{
+    font-family: vampire;
+    background-color: rgba(240, 248, 255, 0.247);
+    width: 40%;
+    margin: auto;
+    
+}
+input{
+    padding: 20px;
+}
+button{
+    padding: 20px;
+    width: 100px;
+    border: none;
+    border-radius: 40px;
+    background-color: #ffee01;
+    
 }

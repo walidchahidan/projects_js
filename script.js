@@ -1,33 +1,49 @@
-
 let btn = document.getElementById("btn");
 let input = document.querySelector("input");
-let res=document.getElementById("result");
-var gess=randomBetween(1,10);
-  alert(gess);
-var chance = 3;
+let res = document.getElementById("result");
+let ch=document.getElementById("ch");
+
+var gess = randomBetween(1, 10);
+alert(gess);
+let chance = 3;
 btn.addEventListener("click", function () {
+  let nbr = Number(input.value);
+  console.log(chance);
   
-  
-  while (chance > 0) {
-    var nbr = Number(input.value);
-    if (nbr > gess) {
-      alert("plus petit");
-      // res.textContent = `plus petit que ${nbr}`;
-      chance--;
-      // console.log(chance);
-    } else if (nbr == gess) {
-      alert("bravooo!!!");
-      // res.textContent = `BRAVOOOOOOOOOOOOO!!!!`;
-      chance = 0;
-      // console.log(chance);
-    } else {
-      alert("plus grand");
-      // res.textContent = `plus grand que ${nbr}`;
-      chance--;
-      // console.log(chance);
-    }
+  if (chance == 0) {
+    input.value="";
+    input.disabled=true;
+    btn.disabled=true;
+    return alert("vous avez pas assès de chance vous avez perdu hahahahaha!!!");  
+    
+  }
+
+  if (nbr > gess) {
+    // alert("plus petit");
+    res.textContent = `plus petit que ${nbr}`;
+    chance--;
+    ch.innerHTML=`Vous avez ${chance} chances`;
+    input.value="";
+    // console.log(chance);
+  } else if (nbr == gess) {
+    // alert("bravooo!!!");
+    res.textContent = `BRAVOOOOOOOOOOOOO!!!!`;
+    chance = 0;
+    ch.textContent=`Vous avez ${chance} chances`;
+    input.disabled=true;
+    btn.disabled=true;
+    input.value="";
+    // console.log(chance);
+  } else {
+    // alert("plus grand");
+    res.textContent = `plus grand que ${nbr}`;
+    chance--;
+    ch.textContent=`Vous avez ${chance} chances`;
+    input.value="";
+    // console.log(chance);
   }
 });
+
 function randomBetween(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-   }
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
