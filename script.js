@@ -1,10 +1,20 @@
-let body=document.body;
-let btn=document.querySelector("button");
-let colors=["red","green","blue","gray"];
+let heading=document.querySelector("h1");
+let text="I am fullstack Developer";
+let i=0;
 
-function changeBgcolor(){
-  let randomIndex=Math.floor(Math.random()*colors.length);
-  body.style.backgroundColor=colors[randomIndex];
+function typewrite(){
+    if(i<text.length){
+        heading.textContent+=text.charAt(i);
+        i++;
+        setTimeout(typewrite,100);
+
+    }
+    else{
+        setTimeout(function(){
+            heading.textContent="";
+            i=0;
+        },2000);
+        
+    }
 }
-setInterval(changeBgcolor,3000);
-btn.addEventListener("click",changeBgcolor);
+setInterval(typewrite,1000);
