@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    align-items: center;
+}
+div{
+    margin: auto;
+    padding: 15px 0;
+    width: 50%;
+    background-color: lawngreen;
+    height: 320px;
+    
+}
+#res{
+    font-size: 2em;
+    margin-top: 0;
+}
+#nbr1,#nbr2{
+    background-color: blanchedalmond;
+    width: 40px;
+    margin: auto;
+}
