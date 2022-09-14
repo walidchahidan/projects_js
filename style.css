@@ -1,11 +1,12 @@
 #calcul{
     margin: auto;
-    width: 150px;
+    width: 550px;
+    
 }
 #numbers{
     display: flex;
     flex-wrap: wrap;
-    
+    gap: 20px;
 }
 #signes>button{
     display: block;
@@ -13,13 +14,31 @@
 #signes{
     position: relative;
     float: right;
+  
 }
 button{
-    width: 50px;
-    height: 40px;
+    width: 100px;
+    height: 90px;
+    font-size: 1.5em;
+    font-weight: 900;
+    box-shadow: 10px 10px 10px gray;
+    background-color: rgba(255, 68, 0, 0.897);
 }
 input{
-    width: 142px;
-    height: 53px;
-
+    width: 452px;
+    height: 145px;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px gray;
+    background-color: #2C3E50;
+    color: white;
+}
+.signe{
+    background-color:#2C3E50 ;
+    color: white;
+}
+#clear{
+    background-color: rgb(194, 5, 5);
+    color: wheat;
 }
