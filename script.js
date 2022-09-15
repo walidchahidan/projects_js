@@ -72,7 +72,7 @@
 
 
 
-let promess = new Promise(function(resolve,reject){
+/*let promess = new Promise(function(resolve,reject){
   let phrase="I Love You";
   if(phrase.length>5){
        let regex = /(\w+) (\w+) (\w+)/g;
@@ -87,6 +87,82 @@ promess.then((phrase)=>{
 }).catch((message) =>{
   console.log(message);
 });
+*/
+// async function remplirTab(n){
+  //   let tab=[];
+  //   for(let i=0 ; i<n ;i++){
+  //     tab[i]=i+1
+  
+  //   }
+  //   return tab[i];
+  // }
+  // remplirTab(5);
 
+
+//  function remplirTab(n){
+//    let tab=[];
+//    let promess = new Promise(function(resolve){
+//     for (let i = 0; i<n ;i++) {
+//       tab[i]=i+1;
+     
+//     }
+//     resolve(tab);
+//    });
+//    return promess;
+//  }
+ 
+//   let prom = remplirTab(5);
+//  prom.then((res) => {
+//    console.log(res);
+//  });
+   
+    // console.log(tab[i]);
+   
+
+    // let url = "https://jsonplaceholder.typicode.com/users";
+    
+    // function getUsersdata(url){
+    //   fetch(url)
+    // .then((users) => {
+    //   return users.json();
+    // })
+    // .then((result) => {
+    //   for(let i=0 ; i<10 ;i++){
+
+    //     let use = result[i];
+    //     console.log(use.name , use.username);
+    //   }
+      
+    // });
+    // }
+    // getUsersdata(url);
+
+
+
+
+
+
+
+    // async function getUsersdata(url) {
+    //   let data = await fetch(url);
+    //   let data2 = await data.json();
+
+    //   for(let i=0 ; i<10 ;i++){
+    //     let user = data2[i];
+    //     // console.log(user.name);
+    //     // console.log(user.username);
+    //     // console.log(user.email);
+       
+    //   }
+    // }
+    
+    // getUsersdata("https://jsonplaceholder.typicode.com/users");
+    // let button = document.querySelector("button");
+    // button.addEventListener("click", function () {
+    //   getApiData(url);
+    // });
+
+   
+  
   
 
