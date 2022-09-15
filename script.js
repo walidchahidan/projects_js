@@ -138,7 +138,23 @@ promess.then((phrase)=>{
     // getUsersdata(url);
 
 
+ let url = "https://type.fit/api/quotes";
+    
+    function getUsersdata(url){
+      fetch(url)
+    .then((users) => {
+      return users.json();
+    })
+    .then((result) => {
+      for(let i=0 ; i<10 ;i++){
 
+        let use = result[i];
+        console.log(use.text , use.author);
+      }
+      
+    });
+    }
+    getUsersdata(url);
 
 
 
