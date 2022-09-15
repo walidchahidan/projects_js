@@ -139,40 +139,29 @@ promess.then((phrase)=>{
 
 
  let url = "https://type.fit/api/quotes";
-    
-    function getUsersdata(url){
-      fetch(url)
-    .then((users) => {
-      return users.json();
-    })
-    .then((result) => {
-      for(let i=0 ; i<10 ;i++){
+ 
 
-        let use = result[i];
-        console.log(use.text , use.author);
-      }
-      
-    });
+    function randomBetween(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    getUsersdata(url);
+    async function getQuotes(url) {
+      let quote = document.getElementById("quote");
+      let auth = document.getElementById("auth");
+      let data = await fetch(url);
+      let data2 = await data.json();
+      let nbr = randomBetween(1,100);
+
+      
+        let user = data2[nbr];
+        // console.log(user.text);
+        // console.log(user.author);
+       quote.textContent=user.text;
+       auth.textContent=user.author;
 
 
-
-
-    // async function getUsersdata(url) {
-    //   let data = await fetch(url);
-    //   let data2 = await data.json();
-
-    //   for(let i=0 ; i<10 ;i++){
-    //     let user = data2[i];
-    //     // console.log(user.name);
-    //     // console.log(user.username);
-    //     // console.log(user.email);
-       
-    //   }
-    // }
+    }
     
-    // getUsersdata("https://jsonplaceholder.typicode.com/users");
+    getQuotes(url);
     // let button = document.querySelector("button");
     // button.addEventListener("click", function () {
     //   getApiData(url);
