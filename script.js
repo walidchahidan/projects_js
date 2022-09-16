@@ -19,7 +19,9 @@ let url = "https://type.fit/api/quotes";
        quote.textContent=user.text;
        auth.textContent=user.author;
 
-
+       if(user.author==null){
+        auth.innerText="Inkonnu";
+       }
     }
     
     getQuotes(url);

@@ -7,7 +7,7 @@ div{
     width: 50%;
     text-align: center;
     margin: auto;
-    background-color: rgb(122, 87, 11);
+    background-color: rgba(122, 87, 11, 0.685);
     font-family: Raleway;
     color: white;
     padding: 40px 10px;
