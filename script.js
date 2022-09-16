@@ -7,6 +7,7 @@ let url = "https://type.fit/api/quotes";
     async function getQuotes(url) {
       let quote = document.getElementById("quote");
       let auth = document.getElementById("auth");
+      
       let data = await fetch(url);
       let data2 = await data.json();
       let nbr = randomBetween(1,1000);

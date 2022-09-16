@@ -22,3 +22,9 @@ div{
 #auth{
     color: gainsboro;
 }
+#btn{
+    padding: 15px;
+    background-color: brown;
+    border-radius: 20px;
+    margin-top: 20px;
+}
